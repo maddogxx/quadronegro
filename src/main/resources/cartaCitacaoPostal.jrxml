@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 5.6.1.final using JasperReports Library version 5.6.1  -->
+<!-- 2017-05-23T15:33:50 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="cartaCitacaoPostal" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4625b6d2-7854-4974-a650-ddb4dc07efd3">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="NOME_EXECUTADO" class="java.lang.String"/>
+	<parameter name="NUMERO_PROCESSO" class="java.lang.String"/>
+	<parameter name="ENDERECO" class="java.lang.String"/>
+	<parameter name="DATA_EXTENSO" class="java.lang.String"/>
+	<parameter name="DATA_DEBITO_ATUALIZADO" class="java.lang.String"/>
+	<parameter name="VALOR_ATUALIZADO" class="java.lang.String"/>
+	<parameter name="LOGO_TJPE" class="java.io.InputStream"/>
+	<parameter name="ASSINATURA_AGENTE" class="java.io.InputStream"/>
+	<parameter name="NOME_AGENTE" class="java.lang.String"/>
+	<parameter name="IMAGEM_DAM" class="java.io.InputStream"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="801" splitType="Stretch">
+			<image scaleImage="FillFrame" onErrorType="Icon">
+				<reportElement x="250" y="5" width="50" height="45" uuid="f59c8abf-c750-4d84-bc60-9444fc03e2de"/>
+				<imageExpression><![CDATA[$P{LOGO_TJPE}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="10" y="55" width="535" height="15" uuid="a4ff3e43-2db4-4779-aa65-351158721b20">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[PODER JUDICIÁRIO DO ESTADO DE PERNAMBUCO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="10" y="70" width="535" height="25" uuid="ac43f62a-248e-4cd4-9cdc-f0ace6da5ca4">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<box leftPadding="0"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[Vara dos Executivos Fiscais Municipais da Capital - Av. República do Líbano, 251, Pina, Empresarial Rio Mar, prédio C, Recife/PE - CEP 51110-160 - Fone: (81) 3355.2560]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="95" width="535" height="5" uuid="aa1d8bbd-7da4-4646-b9c3-0c9192614d29">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Top"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="105" width="535" height="15" uuid="8ac5c8e7-e657-45ca-b076-570e4ffdc363">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[EXEQUENTE: MUNICÍPIO DO RECIFE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="120" width="90" height="15" uuid="8d65d83d-8eb3-461c-95db-0c372ecec027">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[EXECUTADO(A):]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="100" y="120" width="445" height="15" uuid="2646815a-96d8-455c-ba73-b0e2e3e7a3cb">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NOME_EXECUTADO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="135" width="105" height="15" uuid="1139714d-68c7-4e12-8d19-bee6aea7cae3">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[NPU/PROCESSO Nº:]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="115" y="135" width="430" height="15" uuid="2359f424-90de-4a87-9e36-0ee7549783b4">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NUMERO_PROCESSO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="150" width="65" height="15" uuid="65ab87cf-b7e0-4ce1-baab-ee66b3c9dbda">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<text><![CDATA[ENDEREÇO:]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="75" y="150" width="470" height="15" uuid="698e0b1f-f18c-487f-92d9-e686e2b68e7e">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{ENDERECO}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="10" y="170" width="535" height="15" uuid="9abddb2e-5f0f-45a0-9472-a9841d46ec3f">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["RECIFE, " + $P{DATA_EXTENSO}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="190" width="535" height="15" uuid="44471cb0-65fc-4371-a13e-a058e9e440df">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+					<property name="local_mesure_unity" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CARTA DE CITAÇÃO POSTAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="210" width="535" height="85" uuid="8b4f69e2-1e54-4dd0-9313-e01e55790a8f">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified" verticalAlignment="Top" markup="styled">
+					<font size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Prezado(a) Senhor(a),
+
+Com aviso de recebimento e de conformidade com o previsto no art. 8º, Inciso I, da Lei 6.830/80 <style isBold="true">CITO</style> a V. Senhoria, para, no prazo legal de 5 (cinco) dias, a contar do recebimento da presente, pagar a dívida de natureza tributária com os juros de mora, multas e encargos indicados na Certidão de Dívida Ativa, acrescida de custas processuais e honorários, sob pena de serem penhorados tantos bens quanto bastem para o <style isBold="true">PROCESSO DE EXECUÇÃO FISCAL</style>, consoante despacho exarado nos autos, petição inicial e Certidão de Dívida Ativa, cujas cópias seguem anexas e ficam fazendo parte integrante desta carta.]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" x="10" y="300" width="535" height="15" uuid="11f2f8d8-22fb-4809-9350-ea9709869df9">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Valor do débito atualizado em " + $P{DATA_DEBITO_ATUALIZADO} + "."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="10" y="320" width="535" height="15" uuid="af8b254d-8041-4ee2-bc5b-ee90c339af50">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{VALOR_ATUALIZADO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="340" width="535" height="25" uuid="8d7df8b9-6553-4050-9b36-f32c55108606">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified" verticalAlignment="Top" markup="styled">
+					<font size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Fica V. Senhoria cientificado(a) de que terá prazo de 30 (trinta) dias para oferecer <style isBold="true">EMBARGOS À EXECUÇÃO FISCAL</style>, na forma prevista no art. 16 da referida lei.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="480" width="535" height="15" uuid="4340116c-26d1-4087-aef9-b1624f2b0d88">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Atenciosamente,]]></text>
+			</staticText>
+			<image hAlign="Center" vAlign="Middle" onErrorType="Icon">
+				<reportElement positionType="Float" x="10" y="500" width="535" height="30" uuid="121aa054-1856-4694-a467-91f8355861f1"/>
+				<imageExpression><![CDATA[$P{ASSINATURA_AGENTE}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement positionType="Float" x="10" y="535" width="535" height="15" uuid="91588863-e0b5-4468-bc64-764b8116ac8d">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{NOME_AGENTE}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="555" width="535" height="15" uuid="5f722152-6641-4237-bc2a-fc47ffc50bc9">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[CHEFE DE SECRETARIA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="370" width="535" height="45" uuid="18487513-d9d2-43fa-b767-8ead81640e2c">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified" verticalAlignment="Top" markup="styled">
+					<font size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Caso V. Senhoria pretenda embargar a execução deverá observar o prazo e os requisitos estabelecidos pela Lei 6.830/80 (arts.9º e 16) e Instrução Normativa do TJPE nº 11/2013, indicando os bens necessários à garantia total do crédito tributário atualizado, acrescido das custas e honorários advocatícios, na Secretaria desta Vara Privativa, através de advogado habilitado.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" x="10" y="420" width="535" height="55" uuid="28fdb76d-98d0-4857-8044-7aea17aebbc5">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement textAlignment="Justified" verticalAlignment="Top" markup="styled">
+					<font size="9" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Na hipótese de V. Senhoria pretender liquidar o crédito e extinguir o processo de Execução Fiscal, deverá efetuar o pagamento da dívida conforme o DAM, <style isBold="true" isUnderline="true">com desconto de até 50% nos juros e na multa, nos termos da Lei 18.181/15</style>, que segue em anexo ou comparecer à Procuradoria da Fazenda Pública Municipal, com endereço na Av. República do Líbano, 251, Pina, Empresarial Rio Mar, prédio C, Recife/PE - CEP 51110-160, das 7h às 18h, local em que será possível obter informações adicionais, inclusive sobre a possibilidade de parcelamento da dívida.]]></text>
+			</staticText>
+			<image scaleImage="FillFrame" onErrorType="Icon">
+				<reportElement x="10" y="580" width="535" height="221" uuid="b8772e1f-283f-4ae1-98df-ca31e947e68e">
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<imageExpression><![CDATA[$P{IMAGEM_DAM}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+</jasperReport>
