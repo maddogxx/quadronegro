@@ -1,5 +1,6 @@
 package lab.quadronegro.util;
 
+import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
@@ -53,5 +54,15 @@ public final class Util {
 		}
 		
 		return resultado;
+	}
+	
+	/**
+	 * Remove toda a acentuação da string substituindo por caracteres simples sem acento.
+	 * @author https://gist.github.com/rponte/893494
+	 */
+	public static String unaccent(String src) {
+		return Normalizer
+				.normalize(src, Normalizer.Form.NFD)
+				.replaceAll("[^\\p{ASCII}]", "");
 	}
 }
